@@ -14,7 +14,7 @@ app.use(cors())
 app.listen(9000, () => {
     console.log("server is running")
 })
-mongoose.connect('mongodb://127.0.0.1:27017/multikart')
+mongoose.connect(process.env.mongodb_url)
     .then(() => console.log("database is connected"))
 
     .catch((err) => console.log("database is not connected"))
@@ -124,12 +124,13 @@ app.post("/api/login", async (req, res) => {
       userdata: {
         email: data.email,
         userid: data._id,
-        usertype: data.usertype,
+    
         firstname: data.firstname,
 
         userdata:data
       },
       authtoken: token,
+          usertype: data.usertype,
     });
   } catch (error) {
     console.error("Login error:", error);

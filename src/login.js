@@ -66,7 +66,7 @@ const Loginp = () => {
           email: result.userdata.email,
           userid: result.userdata.userid,
             firstname: result.userdata.firstname,
-  usertype: result.userdata.usertype    
+  usertype: result.usertype    
          
         
         }));
@@ -75,7 +75,7 @@ const Loginp = () => {
         sessionStorage.setItem("userinfo", JSON.stringify(result.userdata));
         sessionStorage.setItem("token", result.authtoken);
 
-        setUsertype(result.userdata.usertype);
+        setUsertype(result.usertype);
 
         // Clear password for security (optional)
         setPwd('');
@@ -83,7 +83,7 @@ const Loginp = () => {
         // Redirect after login
         if (id) {
           navigate(`/productdetails?id=${id}`);
-        } else if (result.userdata.usertype === "Admin") {
+        } else if (result.usertype === "Admin") {
           navigate("/home");
         } else {
           navigate("/");
