@@ -127,7 +127,7 @@ app.post("/api/login", async (req, res) => {
     
         firstname: data.firstname,
 
-        userdata:data
+    
       },
       authtoken: token,
           usertype: data.usertype,
