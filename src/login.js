@@ -45,7 +45,7 @@ const Loginp = () => {
     if (!validate()) return;
 
     try {
-      const response = await fetch("http://localhost:9000/api/login", {
+      const response = await fetch("https://ecom-five-xi.vercel.app/api/login", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email, pwd }),

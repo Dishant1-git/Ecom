@@ -55,7 +55,7 @@ const Register = () => {
 
         const data = { fname, lname, email, pwd }
         try {
-            const res = await fetch("http://localhost:9000/api/register", {
+            const res = await fetch("https://ecom-five-xi.vercel.app/api/register", {
                 method: "post",
                 body: JSON.stringify(data),
                 headers: {

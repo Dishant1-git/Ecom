@@ -26,7 +26,7 @@ const Productdetails = () => {
 
   const fetchProductDetails = async () => {
     try {
-      const res = await fetch(`http://localhost:9000/api/pdetails/${productId}`);
+      const res = await fetch(`https://ecom-five-xi.vercel.app/api/pdetails/${productId}`);
       if (!res.ok) throw new Error("Failed to fetch product details");
 
       const result = await res.json();
@@ -50,7 +50,7 @@ const Productdetails = () => {
 
   const checkCartStatus = async () => {
     try {
-      const res = await fetch("http://localhost:9000/api/checkcart", {
+      const res = await fetch("https://ecom-five-xi.vercel.app/api/checkcart", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
@@ -137,7 +137,7 @@ const Productdetails = () => {
       let apiResponse;
 
   //     if (cartStatus === 2) {
-  //       const updateRes = await fetch("http://localhost:9000/api/updatecart",{
+  //       const updateRes = await fetch("https://ecom-five-xi.vercel.app/api/updatecart",{
   //       method: "POST",
   //       headers: {
   //         "Content-Type": "application/json"
@@ -154,7 +154,7 @@ const Productdetails = () => {
   //       apiResponse = await updateRes.json();
   //     }
        if (cartStatus===2 || cartStatus===1 ||cartStatus===3){
-        const addRes = await fetch("http://localhost:9000/api/addcart", {
+        const addRes = await fetch("https://ecom-five-xi.vercel.app/api/addcart", {
           method: "POST",
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify(cartData),

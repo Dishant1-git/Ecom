@@ -17,7 +17,7 @@ const ContactUs = () => {
     const data = { name, email, mobile, subject, message };
 
     try {
-      const res = await fetch("http://localhost:9000/api/contact", {
+      const res = await fetch("https://ecom-five-xi.vercel.app/api/contact", {
         method: "POST",
         body: JSON.stringify(data),
         headers: {
@@ -49,7 +49,7 @@ const ContactUs = () => {
       <div className="breadcrumb-section">
         <div className="container">
           <h2>Contact Us</h2>
-        </div>
+        </div>/
       </div>
 
       <section className="contact-page section-b-space">

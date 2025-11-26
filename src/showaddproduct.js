@@ -14,7 +14,7 @@ const Showaddproduct = () => {
 
     const data = async () => {
         try {
-            const res = await fetch(`http://localhost:9000/api/showproduct/${id}`, {
+            const res = await fetch(`https://ecom-five-xi.vercel.app/api/showproduct/${id}`, {
                 method: "get"
             })
             if (res.ok) {

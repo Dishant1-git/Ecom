@@ -8,7 +8,7 @@ const AllContacts = () => {
 
     const fetchContacts = async () => {
         try {
-            const res = await fetch('http://localhost:9000/api/contactall');
+            const res = await fetch('https://ecom-five-xi.vercel.app/api/contactall');
             const data = await res.json();
             if (data.success) {
                 setContacts(data.contacts);
@@ -25,7 +25,7 @@ const AllContacts = () => {
 
     const fetchOrders = async () => {
         try {
-            const res = await fetch('http://localhost:9000/api/allorders');
+            const res = await fetch('https://ecom-five-xi.vercel.app/api/allorders');
             const data = await res.json();
             if (data.success) {
                 setOrders(data.orders);

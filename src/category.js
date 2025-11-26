@@ -17,7 +17,7 @@ const Category = () => {
         formdata.append("cname1", cname)
         formdata.append("ctype1", ctype)
         try {
-            const res = await fetch("http://localhost:9000/api/category", {
+            const res = await fetch("https://ecom-five-xi.vercel.app/api/category", {
                 method: "post",
                 body: formdata,
             })
@@ -42,7 +42,7 @@ const Category = () => {
     const cat = async () => {
 
         try {
-            const res = await fetch("http://localhost:9000/api/category1", {
+            const res = await fetch("https://ecom-five-xi.vercel.app/api/category1", {
                 method: "get"
             })
             if (res.ok) {
@@ -63,7 +63,7 @@ const Category = () => {
     const del = async (cid) => {
 
         try {
-            const res = await fetch(`http://localhost:9000/api/delete/${cid}`, {
+            const res = await fetch(`https://ecom-five-xi.vercel.app/api/delete/${cid}`, {
                 method: "delete"
             })
             if (res.ok) {
@@ -99,7 +99,7 @@ const Category = () => {
         formdata.append("ctype", ctype)
 
         try {
-            const res = await fetch("http://localhost:9000/api/categoryupdate", {
+            const res = await fetch("https://ecom-five-xi.vercel.app/api/categoryupdate", {
                 method: "put",
                 body: formdata,
             })

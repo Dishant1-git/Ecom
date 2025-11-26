@@ -17,7 +17,7 @@ export const CartProvider = ({ children, userid, Loggedin }) => {
 
     const fetchCartData = async () => {
       try {
-        const response = await fetch(`http://localhost:9000/api/cartdata/${userid}`);
+        const response = await fetch(`https://ecom-five-xi.vercel.app/api/cartdata/${userid}`);
         const result = await response.json();
 
         if (result.statuscode === 1) {
