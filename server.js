@@ -138,7 +138,7 @@ app.post("/api/login", async (req, res) => {
   }
 });
 
-6
+
 
 app.get("/api/fetchdata", async (req, res) => {
     const result = await datamodel.find()
@@ -325,6 +325,16 @@ app.put("/api/updatesubcategory",upload1.single("subtype"),async(req,res)=>{
         res.send({statuscode:0}) 
     } 
 })
+
+
+
+
+
+
+
+
+
+
 app.put("/api/productupdate",upload1.single("pimg"),async(req,res)=>{
     if(!req.file){
         categorypic=req.body.oldpic
