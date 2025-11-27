@@ -12,7 +12,7 @@ const ChatBot = () => {
     setMessages((prev) => [...prev, userMessage]);
 
     try {
-      const res = await fetch("https://ecom-five-xi.vercel.app/api/chat", {
+      const res = await fetch("http://localhost:9000/api/chat", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ message: userInput }),

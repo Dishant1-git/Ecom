@@ -25,7 +25,7 @@ const Checkout = () => {
       const fetchCartData = async () => {
              
              try {
-                 const response = await fetch(`https://ecom-five-xi.vercel.app/api/cartdata/${userid}`);
+                 const response = await fetch(`http://localhost:9000/api/cartdata/${userid}`);
                  const result = await response.json();
      
                  if (!response.ok) {
@@ -77,7 +77,7 @@ const Checkout = () => {
   };
 
   try {
-    const res = await fetch("https://ecom-five-xi.vercel.app/api/checkcartdata", {
+    const res = await fetch("http://localhost:9000/api/checkcartdata", {
       method: "POST",
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(data)

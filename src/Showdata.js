@@ -7,7 +7,7 @@ const Showdata = () => {
     },[])
      const datafetch=async()=>{
 try{
-    const res= await fetch("https://ecom-five-xi.vercel.app/api/fetchdata",{
+    const res= await fetch("http://localhost:9000/api/fetchdata",{
         method:"get",
     })
     if(res.ok){

@@ -12,7 +12,7 @@ const Showalldata = () => {
     const cat=async()=>{
       
         try{
-            const res= await fetch("https://ecom-five-xi.vercel.app/api/category1",{
+            const res= await fetch("http://localhost:9000/api/category1",{
                 method:"get"
             })
             if(res.ok){
