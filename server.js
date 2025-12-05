@@ -692,6 +692,8 @@ const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
 // The Express route
 const faq = [
   { question: "what are your bakery timings", answer: "We are open from 8 AM to 8 PM every day." },
+  { question: "hi", answer: "Hi there, how can i help you?" },
+  { question: "hello", answer: "Hello there, how can i assist you ?" },
   { question: "do you deliver cakes", answer: "Yes, we deliver cakes within a 5km radius of the store." },
   { question: "what types of cakes do you have", answer: "We offer chocolate, vanilla, red velvet, and fruit cakes." },
   { question: "how to place an order", answer: "You can place an order by visiting our shop or calling us at 123-456-7890." },

@@ -29,22 +29,21 @@ const  SiteRoutes = () => {
             <Route path="/" element={<Landing/>}></Route>
             <Route path="/login" element={<Loginp/>}></Route>
             <Route path="/register" element={<Register/>}></Route>
-            <Route path="/fetchdata" element={<Showdata/>}></Route>
-            <Route path="/category" element={<Category/>}></Route>
-            <Route path="/scategory" element={<Subcategory/>}></Route>
-            <Route path="/product" element={<Product/>}></Route>
+            <Route path="/category" element={<Adminroutes mycomp={Category}/>}></Route>
+            <Route path="/scategory" element={<Adminroutes mycomp={Subcategory}/>}></Route>
+            <Route path="/product" element={<Adminroutes mycomp={Product}/>}></Route>
             <Route path="/showsub" element={<Showsubcategory/>}></Route>
             <Route path="/showcat" element={<Showcate/>}></Route>
             <Route path="/showproduct" element={<Showaddproduct/>}></Route>
             <Route path="/productdetails" element={<Productdetails/>}></Route>
             <Route path="/userheader" element={<Userheader/>}></Route>
-            <Route path="/home" element={<Home/>}></Route>
+            <Route path="/home" element={<Adminroutes mycomp={Home}/>}></Route>
             <Route path="/addtocart" element={<Addtocart/>}></Route>
             <Route path="/checkout" element={<Checkout/>}></Route>
             <Route path="/deliveryaddress" element={<Deliveryaddress/>}></Route>
             <Route path="/contact" element={<ContactUs/>}></Route>
             <Route path="/chat" element={<ChatBot/>}></Route>
-            <Route path="/alluser" element={<Userdata/>}></Route>  
+            <Route path="/alluser" element={<Adminroutes mycomp={Userdata}/>}></Route>  
         </Routes>
       
     </div>

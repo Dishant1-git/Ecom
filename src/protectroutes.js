@@ -16,7 +16,7 @@ useEffect(()=>{
 
     }
     else{
-        if(usertype!=="admin"){
+        if(usertype!=="Admin"){
             navigate("/login")
         }
     }
