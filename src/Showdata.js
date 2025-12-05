@@ -7,7 +7,7 @@ const Showdata = () => {
     },[])
      const datafetch=async()=>{
 try{
-    const res= await fetch("http://localhost:9000/api/fetchdata",{
+    const res= await fetch("https://ecom-2-dmmb.onrender.com/api/fetchdata",{
         method:"get",
     })
     if(res.ok){

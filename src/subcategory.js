@@ -21,7 +21,7 @@ const Subcategory = () => {
         formdata.append("subname1",subname)
         formdata.append("subtype1",subtype)
         try{
-            const res= await fetch("http://localhost:9000/api/subcategory",{
+            const res= await fetch("https://ecom-2-dmmb.onrender.com/api/subcategory",{
                 method:'post',
                 body:formdata
             })

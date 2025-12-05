@@ -33,7 +33,7 @@ const[oldpic,setoldpic]=useState()
         formdata.append("pprice",pprice)
         formdata.append("pdescription",pdescription)
         try{
-            const res=await fetch("http://localhost:9000/api/product",{
+            const res=await fetch("https://ecom-2-dmmb.onrender.com/api/product",{
                 method:"post",
                 body:formdata
             })

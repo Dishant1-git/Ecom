@@ -12,7 +12,7 @@ const Showsubcategory = () => {
     },[])
     const show= async()=>{
         try{
-            const res=await fetch(`http://localhost:9000/api/subcat1/${id}`,{
+            const res=await fetch(`https://ecom-2-dmmb.onrender.com/api/subcat1/${id}`,{
                 method:"get"
             })
             if(res.ok){

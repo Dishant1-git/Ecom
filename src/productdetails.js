@@ -50,7 +50,7 @@ const Productdetails = () => {
 
   const checkCartStatus = async () => {
     try {
-      const res = await fetch("http://localhost:9000/api/checkcart", {
+      const res = await fetch("https://ecom-2-dmmb.onrender.com/api/checkcart", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"

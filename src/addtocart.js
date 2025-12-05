@@ -27,7 +27,7 @@ const Addtocart = () => {
     const fetchCartData = async () => {
         setLoading(true);
         try {
-            const response = await fetch(`http://localhost:9000/api/cartdata/${userid}`);
+            const response = await fetch(`https://ecom-2-dmmb.onrender.com/api/cartdata/${userid}`);
             const result = await response.json();
 
             if (!response.ok) {
