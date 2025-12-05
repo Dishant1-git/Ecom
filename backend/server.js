@@ -5,7 +5,7 @@ const mongoose = require("mongoose")
 const multer = require('multer')
 const fs=require("fs")
 const app = express()
-const axios = require("axios");
+
 
 require('dotenv').config(); 
 const jwt = require('jsonwebtoken');
